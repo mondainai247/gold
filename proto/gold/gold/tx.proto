@@ -1,0 +1,7 @@
+syntax = "proto3";
+package gold.gold;
+
+option go_package = "gold/x/gold/types";
+
+// Msg defines the Msg service.
+service Msg {}

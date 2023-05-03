@@ -1,0 +1,12 @@
+syntax = "proto3";
+package gold.gold;
+
+import "gogoproto/gogo.proto";
+import "gold/gold/params.proto";
+
+option go_package = "gold/x/gold/types";
+
+// GenesisState defines the gold module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}
